@@ -1,7 +1,7 @@
 package com.trilink.androidlib.utils;
 
 
-
+import android.app.Activity;
 import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
@@ -49,6 +49,24 @@ public class ScreenUtils {
         } catch (Exception e) {
             return DisplayMetrics.DENSITY_DEFAULT;
         }
+    }
+
+    /**
+     *  获取屏幕宽高乘积
+     * @param activity
+     * @return
+     */
+
+    public static int getScreenSize(Activity activity) {
+        int widthPixels = 0;
+        int heightPixels = 0;
+        DisplayMetrics dm = new DisplayMetrics();
+        if (dm != null) {
+            activity.getWindowManager().getDefaultDisplay().getMetrics(dm);
+            widthPixels = dm.widthPixels;
+            heightPixels = dm.heightPixels;
+        }
+        return widthPixels * heightPixels;
     }
 }
 

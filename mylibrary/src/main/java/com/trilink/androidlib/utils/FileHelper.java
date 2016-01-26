@@ -274,6 +274,20 @@ public class FileHelper {
     }
 
     /**
+     * @param url
+     *            保存文件的文字
+     * @return 文件名
+     */
+    public static String getFileName(String url) {
+        String fileName = null;
+        if (url != null && url.contains("/")) {
+            String[] data = url.split("/");
+            fileName = data[data.length - 1];
+        }
+        return fileName;
+    }
+
+    /**
      * 判断文件夹是否存在,不存在就创建
      * @param path
      * @return true
