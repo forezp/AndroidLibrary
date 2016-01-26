@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 登录页面 -->
+    <string name="register"><u>还没账号？立即注册</u></string>
+    <string name="hint_phone">请输入手机号码</string>
+    <string name="hint_pwd">请输入登录密码</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="login">登录</string>
+</resources>
