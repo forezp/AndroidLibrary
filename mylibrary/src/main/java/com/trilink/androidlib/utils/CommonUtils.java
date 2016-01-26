@@ -23,6 +23,7 @@ public class CommonUtils {
      */
     public static int getVersionCode(Context context) {
         PackageInfo packageInfo = null;
+
         int versionCode = 0;
         try {
             packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName().toString(), 0);
