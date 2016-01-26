@@ -4,6 +4,10 @@
   use them .Such as OkHttp ,Annoation ,Butterknif ,Fresco and GreenDAO ...
    It's very useful for the freshmen of android .
 
+#mylibrary model
+  class  abstract  ListAdapter  extends BaseAdapoter 
+
+
 
 
 
