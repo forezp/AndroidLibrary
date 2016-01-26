@@ -38,6 +38,9 @@ public class CommonUtils {
 
     /**
      * <获取本软件的版本>
+     *
+     *
+     *     
      */
     public static String getVersionName(Context context) {
         PackageInfo packageInfo = null;
