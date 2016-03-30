@@ -1,15 +1,19 @@
 package mydemo.forezp.com.mydemo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.trilink.androidlib.base.BaseActivity;
+
+import mydemo.forezp.com.mydemo.acacheTest.AcacheActivity;
+import mydemo.forezp.com.mydemo.contentProvider.ContentActivity;
 import mydemo.forezp.com.mydemo.libraryTest.LibTestActivity;
+import mydemo.forezp.com.mydemo.uitest.UiTestActivity;
 import mydemo.forezp.com.mydemo.vedio.VedioPlayActivity;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
   //  private TextView tv;
     private Button btnClick;
@@ -87,4 +91,18 @@ public class MainActivity extends Activity {
     public void libTest(View v){
         startActivity(new Intent(MainActivity.this,LibTestActivity.class));
     }
+
+    public void AcacheTest(View v){
+        startActivity(new Intent(MainActivity.this,AcacheActivity.class));
+    }
+
+    public void uiTest(View v){
+        openActivity(UiTestActivity.class);
+    }
+
+
+    public void contentProviderTest(View v){
+        openActivity(ContentActivity.class);
+    }
+
 }

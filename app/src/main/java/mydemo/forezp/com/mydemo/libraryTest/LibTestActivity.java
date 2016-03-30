@@ -7,7 +7,6 @@ import android.view.View;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.trilink.androidlib.slideLibarary.SlidingMenu;
 import com.trilink.androidlib.slideLibarary.app.SlidingFragmentActivity;
-import com.trilink.androidlib.svpdialog.SVProgressHUD;
 import com.trilink.androidlib.utils.T;
 import com.trilink.androidlib.widget.EaseSwitchButton;
 import com.trilink.androidlib.widget.EaseTitleBar;
@@ -35,10 +34,10 @@ public class LibTestActivity extends SlidingFragmentActivity {
         T.show(getApplicationContext(), "ssssss");
         if (switchButton.isSwitchOpen()) {
             switchButton.closeSwitch();
-            SVProgressHUD.showWithStatus(LibTestActivity.this, "加载中..");
+          //  SVProgressHUD.showWithStatus(LibTestActivity.this, "加载中..");
         } else {
             switchButton.openSwitch();
-            SVProgressHUD.dismiss(LibTestActivity.this);
+           // SVProgressHUD.dismiss(LibTestActivity.this);
 
         }
     }

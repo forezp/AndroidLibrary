@@ -81,6 +81,7 @@ public class EditTextHolder implements View.OnClickListener,View.OnFocusChangeLi
             mOnEditTextFocusChangeListener.onEditTextFocusChange(v,hasFocus);
         }
 
+
     }
 
 }

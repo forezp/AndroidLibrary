@@ -64,7 +64,7 @@ public class BaseFragmentActivity extends FragmentActivity {
     public void onBackPressed() {
         super.onBackPressed();
      //   Log.d(TAG, "BaseActivity onBackPressed Invoke...");
-        ActivityCollector.getInstance().removeActivity(this);
+        ActivityCollector.getInstance().finishActivity();
     }
 
 }

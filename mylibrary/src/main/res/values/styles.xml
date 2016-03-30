@@ -134,4 +134,15 @@
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
+    <!-- radioButton-->
+    <style name="check_box" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_box_bg</item>
+    </style>
+
+
+    <!--checkbox style  -->
+    <style name="check_box_more" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_box_more_bg</item>
+    </style>
+
 </resources>

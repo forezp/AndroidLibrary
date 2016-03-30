@@ -57,6 +57,23 @@
             android:text="libTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <Button
+            android:onClick="AcacheTest"
+            android:text="Acahcetest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="uiTest"
+            android:text="UitEST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:onClick="contentProviderTest"
+            android:text="contentProviderTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </mydemo.forezp.com.mydemo.FlowLayout>
 
 

@@ -95,6 +95,9 @@ public class GreenDActivity extends ListActivity {
             Note note = new Note(null, noteText, comment, new Date());
             getNoteDao().insert(note);
             Log.d(TAG, "Inserted new note, ID: " + note.getId());
+            /**
+             * 自动更新
+             */
             cursor.requery();
         }
 

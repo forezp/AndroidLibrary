@@ -68,6 +68,15 @@
 
         <activity android:name=".libraryTest.LibTestActivity"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".acacheTest.AcacheActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".uitest.UiTestActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".contentProvider.ContentActivity" android:screenOrientation="portrait" ></activity>
+
+        <provider android:name="mydemo.forezp.com.mydemo.contentProvider.MyContentProvider" android:authorities="mydemo.forezp.com.mydemo.contentProvider" />
     </application>
 
 </manifest>
