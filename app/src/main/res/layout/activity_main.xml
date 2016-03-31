@@ -74,6 +74,12 @@
             android:text="contentProviderTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:text="notificationMethod"
+            android:onClick="notificationMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </mydemo.forezp.com.mydemo.FlowLayout>
 
 

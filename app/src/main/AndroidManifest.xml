@@ -77,6 +77,9 @@
         <activity android:name=".contentProvider.ContentActivity" android:screenOrientation="portrait" ></activity>
 
         <provider android:name="mydemo.forezp.com.mydemo.contentProvider.MyContentProvider" android:authorities="mydemo.forezp.com.mydemo.contentProvider" />
+
+        <activity android:name=".notification.MainActivity1"/>
+        <activity android:name=".notification.NotificationActivity"/>
     </application>
 
 </manifest>

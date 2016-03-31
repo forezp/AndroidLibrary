@@ -10,6 +10,7 @@ import com.trilink.androidlib.base.BaseActivity;
 import mydemo.forezp.com.mydemo.acacheTest.AcacheActivity;
 import mydemo.forezp.com.mydemo.contentProvider.ContentActivity;
 import mydemo.forezp.com.mydemo.libraryTest.LibTestActivity;
+import mydemo.forezp.com.mydemo.notification.NotificationActivity;
 import mydemo.forezp.com.mydemo.uitest.UiTestActivity;
 import mydemo.forezp.com.mydemo.vedio.VedioPlayActivity;
 
@@ -103,6 +104,10 @@ public class MainActivity extends BaseActivity {
 
     public void contentProviderTest(View v){
         openActivity(ContentActivity.class);
+    }
+
+    public void notificationMethod(View  v){
+        openActivity(NotificationActivity.class);
     }
 
 }
