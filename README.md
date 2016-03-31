@@ -9,7 +9,7 @@
 
 ###Utils库
 
-#### FileHepler 管理文件路径-文件的常见操作
+*** FileHepler 管理文件路径-文件的常见操作
 #### FileCreatorHelper 文件创建帮助类，主要包括常见的jpg ，mp3,mp4文件的创建
 #### BitmapUtis Bitmap 操作类，jpg图片，drawable 转换成Bitmap ，bitmap压缩，计算，保存到scard卡中等。
 #### CheckUtis 主要是用户登录的一些验证，比如电话，有限，身份证，是否有特性字符
