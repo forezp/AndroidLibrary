@@ -37,6 +37,13 @@ public class ActivityCollector {
         activityStack.add(activity);
     }
 
+
+    public void removeActivity(Activity activity) {
+        if (activityStack == null) {
+            activityStack = new Stack<Activity>();
+        }
+        activityStack.remove(activity);
+    }
     /**
      * 获取当前Activity（堆栈中最后一个压入的）
      */
@@ -58,7 +65,7 @@ public class ActivityCollector {
      */
     public void finishActivity(Activity activity) {
         if (activity != null && !activity.isFinishing()) {
-            activityStack.remove(activity);
+           // activityStack.remove(activity);
             activity.finish();
             activity = null;
         }
@@ -80,13 +87,12 @@ public class ActivityCollector {
      * 结束所有Activity
      */
     public void finishAllActivity() {
-        for (int i = 0, size = activityStack.size(); i < size; i++) {
-            if (null != activityStack.get(i)) {
-                finishActivity(activityStack.get(i));
-                break;
+        for (Activity activity : activityStack) {
+            if (!activity.isFinishing()) {
+                activity.finish();
             }
         }
-        activityStack.clear();
+        //activityStack.clear();
     }
 
     /**

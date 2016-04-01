@@ -51,7 +51,7 @@ public class BaseFragmentActivity extends FragmentActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-     //   Log.d(TAG, "BaseActivity onDestroy Invoke...");
+        ActivityCollector.getInstance().removeActivity(this);
     }
 
     @Override
