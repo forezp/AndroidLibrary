@@ -383,8 +383,32 @@ public class BaseFragmentActivity extends FragmentActivity {
 
 ```
 
-###
+###SlideLibrary 侧滑
+这里不再说了，直接上图了。
+
+
+ <img src="screenshots/7.jpg"  height="400" alt="Screenshot"/> <img src="screenshots/8.jpg"  height="400" alt="Screenshot"/> <img src="screenshots/9.jpg"  height="400" alt="Screenshot"/>
+ 
+ 感谢原作者。
     
+
+
+###SimpleAcache 
+Afinal 原作者的作品。
+https://github.com/yangfuhai/ASimpleCache 
+
+###常见的自定义View
+
+*  CircleImageView  --圆形的图片空间
+*  swipmenulistview   lIstView 带菜单的横向侧滑，模仿QQ5.0
+*  photoview    带缩放的图片空间
+*  SlideShowView 图片轮播空间
+*  PullToRefreshView 下拉刷新，上拉加载空间
+*  HorizontalListView  横向listview
+*  EaseTitleBar  titlebar
+*  EaseSwitchButton  switchButton
+
+
 
 
 
